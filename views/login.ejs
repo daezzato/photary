@@ -1,0 +1,49 @@
+<%- include('partials/headerIndex') -%>
+
+
+<body class="body2">
+  
+
+  <div class="login-form">
+      <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
+      <div class="alert alert-danger"><%= el.msg %></div>
+      <% }) %> <% } %> <% if (locals.messages.info) { %> <%
+      messages.info.forEach( el => { %>
+      <div class="alert alert-info"><%= el.msg %></div>
+      <% }) %> <% } %>
+      <form action="/login" method="POST" class="form-container">
+        <div class="form-email-wrapper">
+          <div class="form-email-container">
+            <label for="exampleInputEmail1" class="label-email2">Email address</label>
+            <input type="email" class="email-input" name="email"/>
+          </div>
+        </div>
+        <div class="form-password-wrapper">
+          <div class="form-password-container">
+            <label for="exampleInputPassword1" class="label-password2">Password</label>
+            <input type="password" class="password-input" name="password"/>
+          </div>
+        </div>
+        <div class="login-btn-container">
+          <button type="submit" class="login-btn">Log In</button>
+        </div>
+        
+      </form>
+  </div>
+		
+	<div class="signup3-container">
+		<a href="/signup"><button class="signup-btn3">Go to Sign up</button></a>
+  </div>
+
+</body>
+
+<footer class="footer2">
+  <div>
+    <nav>
+      <ul class="footer-ul">
+        <li>&copy; YeaNah Technologies</li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</html>

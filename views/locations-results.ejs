@@ -1,0 +1,41 @@
+<%- include('partials/headerProfile') -%>
+
+<div class="location-input-container">
+	<form action="/locations" method="POST" class="location-form">
+		<h1>Locations</h1>
+		<label for="location-input" class="location-label">Search for a country: </label>
+		<input type="text" class="location-input" name="location">
+		<button type="submit" class="search-btn">Search</button>
+	</form>
+
+</div>
+
+<div class="location-list">
+  <div class="location-item-container">
+    <div class="fact-name">Location</div>
+    <div class="fact-value"><%= locationName %><span><img src="<%= flagImage %>" alt="" class="flag"></span></div>
+  </div>
+  <div class="location-item-container">
+    <div class="fact-name">Capital</div>
+    <div class="fact-value"><span><%= capital %></span></div>
+  </div>
+  <div class="location-item-container">
+    <div class="fact-name">Continent</div>
+    <div class="fact-value"><span><%= continent %></span></div>
+  </div>
+  <div class="location-item-container">
+    <div class="fact-name">Timezone</div>
+    <div class="fact-value"><span><%= timezone %></span></div>
+  </div>
+  <div class="location-item-container">
+    <div class="fact-name">Language</div>
+    <div class="fact-value"><span><%= language %></span></div>
+  </div>
+  <div class="location-item-container">
+    <div class="fact-name">Currency</div>
+    <div class="fact-value"><span><%= currency %>, <%= currencyName %>, <%= currencySym %></span></div>
+  </div>
+</div>
+<a href="/locations/country/<%= locationName %>"><button class="check-out-btn">Check out <%= locationName %></button></a>
+
+

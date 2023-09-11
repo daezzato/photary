@@ -1,0 +1,63 @@
+<%- include('partials/headerIndex') -%>
+
+
+<body class="body2">
+
+	<div class="signup-form">
+					<% if (locals.messages.errors) { %>
+							<% messages.errors.forEach( el => { %>
+									<div class="alert alert-danger"><%= el.msg %></div>
+							<% }) %>    
+					<% } %>
+					<% if (locals.messages.info) { %>
+							<% messages.info.forEach( el => { %>
+									<div class="alert alert-info"><%= el.msg %></div>
+							<% }) %>    
+					<% } %>
+					<form action="/signup" method="POST">
+						<div class="form-user-wrapper">
+							<div class="form-user-container">
+								<label for="userName" class="label-user">User Name</label>
+								<input type="text" class="user-input"  name="userName">
+							</div>
+						</div>
+						<div class="form-email-wrapper2">
+							<div class="form-email-container2">
+								<label for="exampleInputEmail1" class="label-email3">Email address</label>
+								<input type="email" class="email-input2" name="email">
+							</div>
+						</div>
+						<div class="form-password-wrapper">
+							<div class="form-password-container">
+								<label for="password" class="label-password3">Password</label>
+								<input type="password" class="password-input2" name="password">
+							</div>
+						</div>	
+						<div class="form-password-wrapper">
+							<div class="form-password-container">
+								<label for="confirmPassword" class="label-password4">Confirm Password</label>
+								<input type="password" class="password-input3" name="confirmPassword">
+							</div>
+						</div>
+						<div class="signup4-container">
+							<button type="submit" class="signup-btn3">Sign Up</button>
+						</div>		
+					</form>
+	</div>
+
+		<div class="login2-container">
+			<a href="/login"><button class="login-btn2">Go to Login</button></a>
+		</div>
+
+</body>
+
+<footer class="footer2">
+  <div>
+    <nav>
+      <ul class="footer-ul">
+        <li>&copy; YeaNah Technologies</li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</html>

@@ -1,0 +1,64 @@
+<%- include('partials/headerProfile') -%>
+
+<div class="flash-container">
+	<% if (messages.success) { %>
+		<div id='flash-message' class="alert alert-success">
+			<%= messages.success %>
+		</div>
+	<% } %>
+</div>
+
+<div>
+		<div class="location-card2">
+			<img src="<%= albumPhotoID.srcLge %>" alt="<%= albumPhotoID.footnote %>" class="location-image-card2">
+			<form action="/profile/albums/deleteAlbumPhoto/<%=album._id %>/<%=albumPhotoID._id %>?_method=DELETE" method="POST">
+				<button class="delete-btn2" type="submit"><i class="fas fa-trash-alt"></i></button>
+			</form>
+		</div>
+
+
+		<div class="photo-note-wrapper">
+			<div class="photo-note-container">
+				<form action="/profile/albums/<%=album._id %>/<%=albumPhotoID._id%>/note" method="POST">
+					<textarea class="note-area" name="note" id="" cols="10" rows="1"></textarea>
+					<div class="create-btn2-container">
+						<button type="submit" class="create-btn2">Create Note</button>
+					</div>			
+				</form>
+
+				
+			<% if (notes.length > 0) { %>
+
+				<ul class="note-list">
+					<% notes.forEach(note => { %>
+					<li class="note-item">
+						<%=note.text %>
+						
+						<form action="/profile/albums/<%=album._id %>/<%=albumPhotoID._id %>/note/<%=note._id%>/delete?_method=DELETE" method="POST">
+							<button class="delete-btn3" type="submit"><i class="fas fa-trash-alt"></i></button>
+							
+						</form>
+					</li>
+					<% }) %>
+				</ul>
+			<% } %>
+			</div>
+			
+      
+		</div>
+		
+</div>
+
+<script>
+	setTimeout(() => {
+		const flashMessage = document.getElementById('flash-message')
+		flashMessage.classList.add('fade-out')
+	}, 3000)
+</script>
+
+
+
+
+
+
+

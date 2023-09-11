@@ -1,0 +1,17 @@
+<%- include('partials/headerProfile') -%>
+
+<div class="chosen-album-container">
+	<h1 class="chosen-album-title"><%=album.title %></h1>
+</div>
+
+
+<div class="chosen-photos-container">
+	<% albumPhotos.map(image => { %>
+		<div class="location-card">
+			
+			<a href="/profile/albums/<%=album._id %>/<%=image._id %>"><img src="<%= image.srcMed %>" alt="<%= image.footnote %>" class="<%= image.height > image.width ? 'location-image-portrait' : 'location-image-landscape' %>"></a>
+		</div>
+	<% }) %>
+</div>
+
+

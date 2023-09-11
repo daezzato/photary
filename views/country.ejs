@@ -1,0 +1,27 @@
+<%- include('partials/headerProfile') -%>
+
+
+<div class="chosen-country-container">
+	<h1 class="chosen-country-name"><%= locationName %></h1>
+</div>
+	<div class="chosen-photos-container">
+		<% locationPhotos.map(image => { %>
+			<div class="location-card">
+				<a href="/locations/country/<%= locationName %>/<%=image.id %>"><img src="<%= image.src.medium %>" alt="<%= image.footnote %>" class="<%= image.height > image.width ? 'location-image-portrait' : 'location-image-landscape' %>"></a>
+			</div>
+		<% }) %>
+	</div>
+	<div class="page-container">
+		<% if (prevPage && nextPage) { %>
+			<a href="/locations/country/<%= locationName %>?page=<%=currentPage - 1 %>"><button class="prevpg-btn">Previous Page</a>
+		<% } %>
+		<% if (nextPage) { %>
+			<a href="/locations/country/<%= locationName %>?page=<%= currentPage + 1 %>"><button class="nextpg-btn">Next Page</a>
+		<% } %>
+		
+	</div>
+
+
+
+
+

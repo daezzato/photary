@@ -1,0 +1,2404 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+body {
+	background-color: #292921f3;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.body2{
+	background: linear-gradient(#283838f0, #3b5752);
+}
+
+
+.background-img {
+	background: linear-gradient(#0000009c, #000000e7), url('/img/trav3.jpg');
+	width: 100%;
+	height: 125vh;
+	margin-bottom: 18rem;
+}
+
+
+.phot {
+	color: #ded7ff;
+	font-size: 20rem;
+	text-align: center;
+	font-family: "Corinthia";
+	font-weight: 400;
+	font-style: italic;
+	margin-top: 9rem;
+}
+
+.tag {
+	color: #CBC5EA;
+	text-align: center;
+	font-family: "Poiret One";
+	font-size: 3.5rem;
+	margin-top: 2rem;
+}
+
+.tag2-container {
+	margin-top: 4rem;
+}
+
+.tag2 {
+	color: #CBC5EA;
+	text-align: center;
+	font-family: "Poiret One";
+	font-size: 2.5rem;
+}
+.tag3-1 {
+	color: #63a8c1;
+	text-align: center;
+	font-family: "Poiret One";
+	font-size: 4.5rem;
+	margin-top: 10rem;
+}
+.tag3-2 {
+	color: #CBC5EA;
+	text-align: center;
+	font-family: "Poiret One";
+	font-size: 4.5rem;
+	margin-top: 3rem;
+}
+
+
+
+.nav-container {
+	display: flex;
+	justify-content: center;
+}
+
+.ul-nav {
+	display: flex;
+	margin: 5rem 0 20rem;
+
+}
+
+.signup-btn {
+	margin-left: 2rem;
+}
+
+.login-btn, .signup-btn, .logout-btn {
+	width: 12rem;
+	height: 5rem;
+	font-size: 2.5rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+
+.login-btn:hover, .signup-btn:hover, .logout-btn:hover, .signup-btn2:hover, .signup-btn3:hover, .login-btn2:hover, .logout-btn2:hover, .submit-btn:hover, .create-btn:hover, .view-btn:hover, .delete-btn:hover, .delete-btn2:hover, .delete-btn3:hover, .create-btn2:hover, .search-btn:hover, .nextpg-btn:hover, .prevpg-btn:hover, .save-btn:hover {
+	transform: scale(0.9);
+	box-shadow: 0 2px 2px #cbc5ea79;
+}
+
+.hero-wrapper {
+	display: flex;
+	justify-content: center;
+	column-gap: 4rem;
+	
+}
+
+
+.hero-rome {
+	width: 18vw;
+	height: 52vh;
+	border-radius: 1.4rem;
+	background: linear-gradient(to bottom, transparent 0%, black 100%), url('/img/rome.jpg');
+	background-size: cover;
+	transition: transform 0.35s ease-in-out;
+}
+
+.hero-rome:hover {
+	transform: scale(1.2);
+	background: url('/img/rome.jpg');	
+	background-size: cover;
+}
+
+.hero-colom {
+	width: 18vw;
+	height: 52vh;
+	border-radius: 1.4rem;
+	background: linear-gradient(to bottom, transparent 0%, black 100%), url('/img/colom2.jpg');
+	background-size: cover;
+	transition: transform 0.35s ease-in-out;
+}
+
+.hero-colom:hover {
+	transform: scale(1.2);
+	background: url('/img/colom2.jpg');	
+	background-size: cover;
+}
+
+.hero-cpt {
+	width: 18vw;
+	height: 52vh;
+	border-radius: 1.4rem;
+	background: linear-gradient(to bottom, transparent 0%, black 100%), url('/img/cpt2.jpg');	
+	background-size: cover;
+	transition: transform 0.35s ease-in-out;
+}
+
+.hero-cpt:hover {
+	transform: scale(1.2);
+	background: url('/img/cpt2.jpg');	
+	background-size: cover;
+}
+
+.photo-icon-wrapper {
+	background-color: #24242177;
+	margin-top: 42rem;
+	padding: 10rem;
+}
+
+.photo-icon-container1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: solid #cbc5ea4d 2px;
+	max-width: 100%;
+}
+
+.photo1-container {
+	display: flex;
+	justify-content: center;
+	margin-left: 10rem;
+	margin-bottom: 5rem;
+	flex: 1;
+}
+
+.photo1 {
+	border-radius: 2rem;
+	max-width: 80%;
+}
+
+.icon-text-container-top {
+	flex: 1;
+	margin-bottom: 3rem;
+	margin-left: 5rem;
+}
+
+.icon-text-top {
+	max-width: 70%;
+	font-size: 3rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+}
+
+.photo-icon-container2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: solid #cbc5ea4d 2px;
+	max-width: 100%;
+}
+
+.icon-text-container-mid {
+	flex: 1;
+}
+
+.icon-text-mid {
+	max-width: 70%;
+	font-size: 3rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	margin-left: 18rem;
+}
+
+.photo2-container {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+	margin: 5rem 5rem 5rem 0;
+}
+
+.photo2 {
+	border-radius: 2rem;
+	max-width: 80%;
+}
+
+.photo-icon-container3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+}
+
+.photo3-container {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+	margin-left: 10rem;
+	margin-top: 5rem;
+}
+
+.photo3 {
+	border-radius: 2rem;
+	max-width: 80%;
+}
+
+.icon-text-container-btm {
+	flex: 1;
+	margin-left: 5rem;
+	margin-top: 3rem;
+}
+
+.icon-text-btm {
+	max-width: 70%;
+	font-size: 2.984rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+}
+
+.signup2-container {
+	background-color: #a3a370f3;
+	padding: 5rem 0;
+	text-align: center;
+}
+
+.signup-msg {
+	display: block;
+	color: #000000;
+	text-align: center;
+	font-family: "Poiret One";
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 3.5rem;
+}
+
+.signup-btn2 {
+	width: 12rem;	
+	height: 5rem;
+	font-size: 2.5rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	background: #468d16e1;
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.login2-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 0;
+	padding: 5rem 0;
+}
+
+.login-btn2 {
+	padding: 2rem 2rem;
+	font-size: 2.5rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+.logout-btn2 {
+	margin-right: 3rem;
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.contact-container {
+	margin-top: 5rem;
+}
+	
+.contact-container h2 {
+	text-align: center;
+	color: #CBC5EA;
+	font-size: 3rem;
+	font-family: "Poiret One";
+	margin-bottom: 4rem;
+}
+
+
+.label-name-container {
+	text-align: center;
+}
+
+
+.label-email-container {
+	text-align: center;
+}
+
+.label-message-container {
+	text-align: center;
+}
+
+#name, #email, #message {
+	padding: 1rem;
+	font-size: 2rem;
+	border-radius: 2rem;
+	border: none;
+	background-color: #E8E6F3;
+	width: 30%;
+	margin-bottom: 2rem;
+}
+
+.label-name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.label-email {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.label-message {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+textarea {
+	padding: 1rem;
+	font-size: 2rem;
+	border-radius: 2rem;
+	border: none;
+	background-color: #E8E6F3;
+	width: 100%;
+	margin-bottom: 2rem;
+	height: 10rem;
+}
+
+.submit-btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3rem 0 5rem;
+}
+
+.submit-btn {
+	padding: 2rem 2rem;
+	font-size: 2.5rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+
+
+.label-message, .label-name, .label-email, .label-password, .label-user, .label-email2, .label-password2, .label-email3, .label-password3, .label-password4 {
+	color: #CBC5EA;
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: "Poiret One";
+	margin-bottom: 2rem;
+}
+
+
+.form-email-container, .form-password-container, .form-user-container, .form-email-container2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.form-email-container {
+	margin-top: 5rem;
+}
+
+.form-user-container {
+	margin-top: 5rem;
+}
+
+.label-email2, .label-password2  {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.email-input, .password-input, .user-input, .email-input2, .password-input2, .password-input3 {
+	text-align: center;
+	padding: 1rem;
+	font-size: 2rem;
+	border-radius: 2rem;
+	border: none;
+	background-color: #E8E6F3;
+	width: 30%;
+	margin-bottom: 2rem;
+	height: 4rem;
+}
+
+.login-btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.signup3-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 7rem 0;
+	padding: 5rem 0;
+}
+
+.signup4-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1.5rem 0;
+	padding: 5rem 0;
+}
+
+.signup-btn3 {
+	padding: 2rem 2rem;
+	font-size: 2.5rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.navbar-profile {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+	border-bottom: solid .2rem #cbc5ea74;
+}
+
+.logo {
+	margin-left: 3rem;
+	font-family: "Corinthia";
+	font-size: 5rem;
+	color: #CBC5EA;
+	flex: 1;
+}
+
+.logo2-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo2 {
+	margin-left: 3rem;
+	font-family: "Corinthia";
+	font-size: 5rem;
+	color: #CBC5EA;
+	flex: 1;
+}
+
+.ul-nav2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.profile, .locations, .logout {
+	font-family: "Corinthia";
+	font-size: 3rem;
+	color: #CBC5EA;
+	padding: 1.5rem;
+}
+
+.profile {
+	margin-right: 5rem;
+
+}
+
+.logout-btn2-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.profile:hover, .locations:hover {
+	background-color: #3aa58c2c;
+	border-radius: 3.5rem;
+}
+
+
+li {
+	list-style: none;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: #CBC5EA;
+	height: 100%;
+}
+
+.user-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8rem;
+}
+
+.user-intro {
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+  font-size: 8rem;
+}
+
+.create-album-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.create-album {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 8rem;
+}
+
+.create-album label {
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.createAlbum {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.create-btn {
+	width: 10rem;
+	height: 4rem;
+	margin-top: 2rem;
+	font-size: 2rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.countries-album-container {
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+}
+
+.countries-album-tag {
+	text-align: center;
+	font-size: 5rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	margin-bottom: 8rem;
+}
+
+.countries-album {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.albums-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10rem 15rem;
+}
+
+.album-item {
+	display: flex;
+	flex-direction: column;
+	background-color: #033f44;
+	border: 1px solid #898989;
+	border-radius: 2rem;
+	box-shadow: -6px 6px 10px 3px #000000;
+	padding: 3rem 4rem;
+}
+
+.album-item-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 3.5rem;
+	max-width: 100%;
+	max-height: 100%;
+	width: 10rem;
+	height: 10rem;
+	margin-bottom: 1rem;
+}
+
+.album-item-title {
+	text-align: center;
+	font-size: 3rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	margin-bottom: 3rem;
+}
+
+.album-item-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.view-btn, .delete-btn{
+	width: 8rem;
+	height: 4rem;
+	margin-bottom: 3rem;
+	font-size: 2rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+
+
+.delete-btn2 {
+	margin: 2rem 0 0 60rem;
+	width: 3rem;
+	height: 3rem;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.delete-btn3 {
+	margin-left: auto;
+	width: 3rem;
+	height: 3rem;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+
+}
+
+.delete-btn2 i {
+	font-size: 1rem;
+}
+
+.delete-btn3 i {
+	font-size: 1rem;
+}
+
+.view-btn {
+	margin-right: 2rem;
+}
+
+.chosen-album-container {
+	margin-top: 6rem;
+
+}
+
+.chosen-album-title {
+	text-align: center;
+	font-size: 5rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	margin-bottom: 12rem;
+}
+
+.chosen-photos-container {
+	display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.location-card {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.35s;
+	aspect-ratio: 1/1;
+}
+
+.location-card:hover {
+	transform: scale(0.9);
+}
+
+.location-image-landscape {
+	max-width: 30rem;
+}
+
+.location-image-portrait {
+	max-height: 30rem;
+}
+
+.location-card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.location-image-card2 {
+  max-width: 100%;
+  height: auto;
+  margin-top: 3rem;
+}
+
+.photo-note-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin: 8rem auto;
+}
+
+.photo-note-container {
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+  padding: 2.5rem;
+  width: 30%;
+}
+
+.note-area {
+  display: block;
+	width: 100%;
+  border-radius: 0.25rem;
+	margin-top: 1rem;
+}
+
+.create-btn2-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.create-btn2 {
+  width: 8rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  font-family: "Poiret One";
+  font-weight: bold;
+  color: #CBC5EA;
+  background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 2px 2px #cbc5ea79;
+  transition: transform 0.25s ease-in-out;
+  cursor: pointer;
+	margin: 1rem 0;
+}
+
+.note-list {
+  list-style: none;
+	background-color:#283939b0;
+	padding: 0.1rem 1.5rem;	
+	border-radius: 0.3rem;
+}
+
+.note-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  max-height: 8rem;
+	width: 100%;
+  margin: 2rem 0;
+  padding: 1.3rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+	font-size: 2rem;
+  font-family: "Poiret One";
+  font-weight: bold;
+  color: #CBC5EA;
+  
+}
+
+
+.location-input-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.location-input-container h1 {
+	text-align: center;
+	font-size: 3rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	margin: 4rem 0;
+}
+
+.location-label {
+	font-size: 3rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+}
+
+.location-input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.search-btn { 
+	width: 8rem;
+	height: 4rem;
+	margin-bottom: 5rem;
+	font-size: 2rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.location-list {
+	display: block;
+}
+
+.location-item-container {
+	margin: 0 auto;
+	margin-bottom: 2rem;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.fact-name {
+	font-family: "Poiret One";
+  font-size: 4.5rem;
+  font-weight: bold;
+	color: #CBC5EA;
+}
+
+.fact-value {
+  display: flex;
+	flex-wrap: wrap;
+  align-items: center;
+  font-size: 3rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+}
+
+.fact-value span {
+  margin-left: auto;
+  font-size: 3rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+}
+
+.flag {
+  max-height: 12rem;
+	max-width: 12rem;
+}
+
+.check-out-btn {
+	display: block;
+  margin: 8rem auto;
+	font-family: "Poiret One";
+	font-size: 2rem;
+	font-weight: bold;
+  width: 12rem;
+	height: 6rem;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.check-out-btn:hover {
+	transform: scale(0.9);
+	box-shadow: 0 2px 2px #cbc5ea79;
+}
+
+.chosen-photos-container {
+	margin-top: 6rem;
+
+}
+
+.chosen-country-name {
+	text-align: center;
+	font-size: 5rem;
+	font-family: "Poiret One";
+	font-weight: bold;
+	color: #CBC5EA;
+	margin: 12rem 0;
+}
+
+.chosen-country-card {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.35s;
+	aspect-ratio: 1/1;
+}
+
+.chosen-country-card:hover {
+	transform: scale(0.9);
+}
+
+.page-container {
+	display: flex;
+	justify-content: center;
+	margin: 5rem 0;
+}
+
+.nextpg-btn, .prevpg-btn{
+	font-family: "Poiret One";
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 2rem;
+	margin: 0 1rem;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.save-photo-container {
+	margin: 4rem 0;
+}
+
+select {
+  border: none;
+	border-radius: 2rem;
+  background-color: white;
+  padding: 0.9rem;
+  font-size: 1.5rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+option:hover {
+  background-color: #f5f5f5;
+}
+
+.photo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pexels-id, .photographer, .save-label{
+	font-family: "Poiret One";
+	font-size: 2rem;
+	font-weight: bold;
+	color: #CBC5EA;
+}
+
+
+.save-btn {
+	font-family: "Poiret One";
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 1rem;
+	margin: 0 1rem;
+	color: #CBC5EA;
+	background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	box-shadow: 0 2px 2px #cbc5ea79;
+	transition: transform 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.flash-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.alert-success {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	font-family: "Poiret One";
+	font-size: 2rem;
+	font-weight: bold;	
+	border-radius: 2rem;
+	background-color: #000;
+	color: #CBC5EA;
+}
+
+#flash-message {
+	transition: opacity 2s ease-in-out;
+	opacity: 1;
+}
+
+#flash-message.fade-out {
+	opacity: 0;
+}
+
+footer {
+	background-color: #292921f3;
+	font-size: 1.5em;
+	margin-top: auto;
+}
+
+.footer2 {
+	background-color: #052d2ef0;
+	font-size: 1.5em;
+	margin-top: auto;
+}
+
+.footer-ul {
+	padding: 5rem 0;
+	list-style: none;
+	text-align: center;
+
+}
+
+.footer-ul > li {
+	color: #CBC5EA;
+	font-family: "Poiret One";
+}
+
+
+
+/* Tablets media queries */
+
+@media screen and (max-width: 768px) {
+
+	.background-img {
+		width: 100%;
+		height: 150vh;
+	}
+
+	.phot {
+		font-size: 15rem;
+	}
+
+	.tag {
+		font-size: 3rem;
+	}
+	
+	.tag2 {
+		font-size: 2.3rem;
+	}
+	.tag3-1 {
+		font-size: 3.5rem;
+		margin-top: 7rem;
+	}
+	.tag3-2 {
+		font-size: 3rem;
+		margin-top: 3rem;
+	}
+	
+	
+	.ul-nav {
+		margin: 5rem 0 15rem;
+	}
+	
+	.login-btn, .signup-btn, .logout-btn {
+		width: 10rem;
+		height: 4rem;
+		font-size: 2rem;
+	}
+	
+	
+	.hero-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: 4rem;
+		
+	}
+	
+	.hero-rome {
+		width: 40vw;
+		height: 40vh;
+	}
+	
+	.hero-colom {
+		width: 40vw;
+		height: 40vh;
+		margin-top: 5rem;
+	}
+	
+	.hero-cpt {
+		width: 40vw;
+		height: 40vh;
+	}
+	
+	.photo-icon-wrapper {
+		background-color: #24242177;
+		margin-top: 34rem;
+		padding: 1rem;
+	}
+	
+	.photo-icon-container1 {
+		margin-top: 5rem;
+	}
+	
+	.photo1-container {
+		margin-left: 5rem;
+		margin-bottom: 5rem;
+	}
+	
+	.photo1 {
+		max-width: 100%;
+	}
+	
+	.icon-text-container-top {
+		margin-bottom: 5rem;
+		margin-left: 5rem;
+	}
+	
+	.icon-text-top {
+		font-size: 1.5rem;
+	}
+
+	.icon-text-mid {
+		max-width: 70%;
+		font-size: 1.5rem;
+		margin-left: 7rem;
+	}
+	
+	.photo2-container {
+		margin: 5rem 1rem 5rem 0;
+	}
+	
+	.photo2 {
+		max-width: 90%;
+	}
+	
+	.photo-icon-container3 {
+		max-width: 100%;
+		margin-bottom: 5rem;
+	}
+	
+	.photo3-container {
+		margin-left: 5rem;
+		margin-top: 5rem;
+	}
+	
+	.photo3 {
+		max-width: 100%;
+	}
+	
+	.icon-text-container-btm {
+		margin-left: 5rem;
+		margin-top: 5rem;
+	}
+	
+	.icon-text-btm {
+		max-width: 70%;
+		font-size: 1.5rem;
+	}
+
+	.signup2-container {
+		padding: 2.5rem 0;
+	}
+	
+	.signup-msg {
+		font-size: 2.3rem;
+	}
+	
+	.signup-btn2 {
+		width: 10rem;	
+		height: 4rem;
+		font-size: 1.7rem;
+	}
+		
+		
+	.contact-container h2 {
+		font-size: 2.8rem;
+		margin-bottom: 4rem;
+	}
+	
+	
+	#name, #email, #message {
+		padding: 1rem;
+		font-size: 2rem;
+		width: 50%;
+	}
+	
+	
+	textarea {
+		padding: 1rem;
+		font-size: 2rem;
+	}
+
+	.submit-btn {
+		padding: 1.5rem 1.5rem;
+		font-size: 1.8rem;
+	}
+
+	.label-message, .label-name, .label-email, .label-password, .label-user, .label-email2, .label-password2, .label-email3, .label-password3, .label-password4 {
+		color: #CBC5EA;
+		font-size: 2rem;
+		font-weight: bold;
+		font-family: "Poiret One";
+		margin-bottom: 2rem;
+	}
+	
+	.email-input, .password-input, .user-input, .email-input2, .password-input2, .password-input3 {
+		text-align: center;
+		padding: 1rem;
+		font-size: 2rem;
+		border-radius: 2rem;
+		border: none;
+		background-color: #E8E6F3;
+		width: 50%;
+		margin-bottom: 2rem;
+		height: 4rem;
+	}
+	
+	.login-btn-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.signup3-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 4rem 0;
+		padding: 5rem 0;
+	}
+	
+	.signup-btn3 {
+		padding: 1.3rem 1.3rem;
+		font-size: 2rem;
+		
+	}
+
+	.logo {
+		margin-left: 24rem;
+		font-family: "Corinthia";
+		font-size: 5rem;
+		color: #CBC5EA;
+	}
+
+	.login2-container {
+		margin: 2rem 0;
+		padding: 5rem 0;
+	}
+	
+	.login-btn2 {
+		padding: 1.4rem 1.4rem;
+		font-size: 2rem;
+	}
+
+	.ul-nav2 {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		flex: 1;
+	}
+
+	.profile {
+		margin-right: 2rem;
+	}
+
+	.locations {
+		margin-right: 5rem;
+	}
+
+	.logout {
+		margin-right: 1.5rem;
+	}
+
+	.logout-btn2 {
+		width: 80%;
+		padding: 1rem 1rem;
+		font-size: 1.3rem;	
+	}
+
+	.user-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 6rem;
+	}
+	
+	.user-intro {
+		font-size: 6rem;
+	}
+
+	.countries-album-container {
+		margin-top: 8rem;
+	}
+	
+	.countries-album-tag {
+		font-size: 4.5rem;
+		margin-bottom: 8rem;
+	}
+	
+	.albums-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 6rem 8rem;
+	}
+
+	.chosen-album-container {
+		margin-top: 6rem;
+	
+	}
+	
+	.chosen-album-title {
+		margin-bottom: 6rem;
+	}
+	
+	.chosen-photos-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.location-card:hover {
+		transform: scale(0.9);
+	}
+	
+	.location-image-landscape {
+		max-width: 25rem;
+	}
+	
+	.location-image-portrait {
+		max-height: 25rem;
+	}
+
+	.location-card2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	.location-image-card2 {
+		max-width: 80%;
+		height: auto;
+		margin-top: 3rem;
+	}
+	.photo-note-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 6rem auto;
+	}
+	
+	.photo-note-container {
+		border: 1px solid #ccc;
+		border-radius: 0.25rem;
+		padding: 2.5rem;
+		width: 70%;
+	}
+	
+	.note-area {
+		display: block;
+		width: 100%;
+		border-radius: 0.25rem;
+		margin-top: 1rem;
+	}
+	
+	.note-list {
+			list-style: none;
+			background-color:#283939b0;
+			padding: 0.1rem 1.5rem;	
+			border-radius: 0.3rem;
+	}
+	
+	.note-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-height: 8rem;
+		width: 100%;
+		margin: 2rem 0;
+		padding: 1.3rem;
+		border: 1px solid #ccc;
+		border-radius: 0.25rem;
+		font-size: 1.8rem;
+		font-family: "Poiret One";
+		font-weight: bold;
+		color: #CBC5EA;
+		
+	}
+
+	.delete-btn2 {
+		margin: 2rem 0 0 40rem;
+		width: 3rem;
+		height: 3rem;
+		color: #CBC5EA;
+		background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+		outline: none;
+		border: none;
+		border-radius: 2rem;
+		box-shadow: 0 2px 2px #cbc5ea79;
+		transition: transform 0.25s ease-in-out;
+		cursor: pointer;
+	}
+	
+	.delete-btn3 {
+		margin-left: auto;
+		width: 3rem;
+		height: 3rem;
+		color: #CBC5EA;
+		background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+		outline: none;
+		border: none;
+		border-radius: 2rem;
+		box-shadow: 0 2px 2px #cbc5ea79;
+		transition: transform 0.25s ease-in-out;
+		cursor: pointer;
+	
+	}
+	
+
+	.location-input-container h1 {
+		font-size: 2.5rem;
+	}
+
+	.location-label {
+		font-size: 2.3rem;
+	}
+
+	.location-input {
+		font-size: 2rem;
+		padding: 0.3rem;
+		margin: 0 1rem;
+	}
+
+	.search-btn { 
+		width: 7rem;
+		height: 4rem;
+		font-size: 1.5rem;
+	}
+
+
+
+	.location-list {
+		display: block;
+	}
+	
+	.location-item-container {
+		margin: 0 auto;
+		margin-bottom: 2rem;
+		width: 70%;
+		background-color: rgba(0, 0, 0, 0.7);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+		border-radius: 10px;
+		padding: 18px;
+	}
+	
+	.fact-name {
+		font-family: "Poiret One";
+		font-size: 3.7rem;
+		font-weight: bold;
+		color: #CBC5EA;
+	}
+	
+	.fact-value {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		font-size: 2.7rem;
+		font-family: "Poiret One";
+		font-weight: bold;
+		color: #CBC5EA;
+	}
+	
+	.fact-value span {
+		margin-left: auto;
+		font-size: 2.7rem;
+		font-family: "Poiret One";
+		font-weight: bold;
+		color: #CBC5EA;
+	}
+	
+	.flag {
+		max-height: 12rem;
+		max-width: 12rem;
+	}
+	
+	.check-out-btn {
+		display: block;
+		margin: 8rem auto;
+		font-family: "Poiret One";
+		font-size: 2rem;
+		font-weight: bold;
+		width: 12rem;
+		height: 6rem;
+		color: #CBC5EA;
+		
+	}
+
+	.chosen-photos-container {
+		margin-top: 6rem;
+	
+	}
+	
+	.chosen-country-name {
+		text-align: center;
+		font-size: 5rem;
+		font-family: "Poiret One";
+		font-weight: bold;
+		color: #CBC5EA;
+		margin: 10rem 0;
+	}
+
+
+	.page-container {
+		display: flex;
+		justify-content: center;
+		margin: 4rem 0 8rem 0;
+	}
+	
+	.nextpg-btn, .prevpg-btn{
+		font-family: "Poiret One";
+		font-size: 2rem;
+		font-weight: bold;
+		padding: 2rem;
+		margin: 0 1rem;
+		color: #CBC5EA;
+	}
+	
+	.save-photo-container {
+		margin: 4rem 0;
+	}
+	
+	select {
+		border: none;
+		border-radius: 2rem;
+		background-color: white;
+		padding: 0.7rem;
+  	font-size: 1.5rem;
+  	box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+		transition: box-shadow 0.3s;
+	}
+	
+	select:focus {
+		outline: none;
+		box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+	}
+	
+	option:hover {
+		background-color: #f5f5f5;
+	}
+	
+	.photo-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 3rem;
+		padding: 1rem;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+	
+	.pexels-id, .photographer, .save-label{
+		font-family: "Poiret One";
+		font-size: 2rem;
+		font-weight: bold;
+		color: #CBC5EA;
+	}
+	
+	
+	.save-btn {
+		font-family: "Poiret One";
+		font-size: 2rem;
+		font-weight: bold;
+		padding: 0.8rem;
+		margin: 0 1rem;
+		color: #CBC5EA;
+		background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+		outline: none;
+		border: none;
+		border-radius: 2rem;
+		box-shadow: 0 2px 2px #cbc5ea79;
+		transition: transform 0.25s ease-in-out;
+		cursor: pointer;
+	}
+
+
+
+}
+
+
+
+
+/* Mobile media queries */
+
+@media screen and (max-width: 480px) {
+	.background-img {
+		width: 100%;
+		height: 100vh;
+	}
+
+	.phot {
+		font-size: 10rem;
+	}
+
+	.tag {
+		font-size: 2.5rem;
+	}
+	
+	.tag2 {
+		font-size: 1.7rem;
+	}
+	.tag3-1 {
+		font-size: 2.7rem;
+		margin-top: 5rem;
+	}
+	.tag3-2 {
+		font-size: 2.6rem;
+		margin-top: 3rem;
+	}
+	
+	
+	.ul-nav {
+		margin: 5rem 0 10rem;
+	}
+	
+	.login-btn, .signup-btn, .logout-btn {
+		width: 8rem;
+		height: 3rem;
+		font-size: 1.7rem;
+	}
+	
+	
+	.hero-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: 4rem;
+		
+	}
+	
+	.hero-rome {
+		width: 60vw;
+		height: 30vh;
+	}
+	
+	.hero-colom {
+		width: 60vw;
+		height: 30vh;
+		margin-top: 5rem;
+	}
+	
+	.hero-cpt {
+		width: 60vw;
+		height: 30vh;
+		margin-top: 5rem;
+	}
+	
+	.photo-icon-wrapper {
+		background-color: #24242177;
+		margin-top: 64rem;
+		padding: 1rem;
+	}
+	
+	.photo-icon-container1 {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		margin-top: 5rem;
+	}
+	
+	.photo1-container {
+		margin-left: 0rem;
+	}
+	
+	.photo1 {
+		max-width: 75%;
+	}
+	
+	.icon-text-container-top {
+		margin-bottom: 3rem;
+		margin-left: 4.5rem;
+		margin-top: -3rem;
+	}
+	
+	.icon-text-top {
+		font-size: 1.5rem;
+		max-width: 90%;
+	}
+
+	.photo-icon-container2 {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas:
+		"photo"
+		"stuff";
+		margin-top: 3rem;
+	}
+
+	.icon-text-mid {
+		display: grid;
+		grid-area: stuff;
+		max-width: 80%;
+		font-size: 1.5rem;
+		margin: 3rem 0 3rem 4.3rem;
+	}
+	
+	.photo2-container {
+		display: grid;
+		grid-area: photo;
+		margin: 1rem 0rem 0rem 4.5rem;
+	}
+	
+	.photo2 {
+		max-width: 85%;
+	}
+	
+	.photo-icon-container3 {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		margin-bottom: 5rem;
+	}
+	
+	.photo3-container {
+		margin-left: 0rem;
+		margin-top: 4rem;
+	}
+	
+	.photo3 {
+		max-width: 75%;
+	}
+	
+	.icon-text-container-btm {
+		margin-left: 4.3rem;
+		margin-top: 3rem;
+	}
+	
+	.icon-text-btm {
+		max-width: 90%;
+		font-size: 1.5rem;
+	}
+	
+	
+	
+	.signup2-container {
+		padding: 2rem 0;
+	}
+	
+	.signup-msg {
+		font-size: 2rem;
+	}
+	
+	.signup-btn2 {
+		width: 8rem;	
+		height: 3rem;
+		font-size: 1.5rem;
+	}
+		
+	.contact-container h2 {
+		text-align: center;
+		color: #CBC5EA;
+		font-size: 2.7rem;
+		font-family: "Poiret One";
+		margin-bottom: 4rem;
+	}
+
+	
+	#name, #email, #message {
+		padding: 1rem;
+		font-size: 1.5rem;
+		width: 50%;
+		margin-bottom: 2rem;
+	}
+	
+	
+	textarea {
+		padding: 1rem;
+		font-size: 1.5rem;
+		border-radius: 2rem;
+		border: none;
+		background-color: #E8E6F3;
+		width: 100%;
+		margin-bottom: 2rem;
+		height: 10rem;
+	}
+	
+	.submit-btn-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 2rem 0 4rem;
+	}
+	
+	.submit-btn {
+		padding: 1.5rem 1.5rem;
+		font-size: 1.6rem;
+	}
+	
+	.label-message, .label-name, .label-email, .label-password, .label-user, .label-email2, .label-password2, .label-email3, .label-password3, .label-password4 {
+		color: #CBC5EA;
+		font-size: 2rem;
+		font-weight: bold;
+		font-family: "Poiret One";
+		margin-bottom: 2rem;
+	}
+	
+
+	
+	.email-input, .password-input, .user-input, .email-input2, .password-input2, .password-input3  {
+		font-size: 1.7rem;
+		width: 60%;
+		margin-bottom: 2rem;
+		height: 3rem;
+	}
+
+	.label-message, .label-name, .label-email, .label-password, .label-user, .label-email2, .label-password2, .label-email3, .label-password3, .label-password4 {
+		color: #CBC5EA;
+		font-size: 2rem;
+		font-weight: bold;
+		font-family: "Poiret One";
+		margin-bottom: 2rem;
+	}
+	
+	.login-btn-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.signup3-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 3rem 0;
+		padding: 5rem 0;
+	}
+	
+	.signup-btn3 {
+		padding: 1rem 1rem;
+		font-size: 1.8rem;
+
+	}
+
+	.logo {
+		margin-left: 13rem;
+		font-family: "Corinthia";
+		font-size: 5rem;
+		color: #CBC5EA;
+	}
+
+	.login2-container {
+		margin: 1rem 0;
+		padding: 5rem 0;
+	}
+	
+	.login-btn2 {
+		padding: 1.2rem 1.2rem;
+		font-size: 1.7rem;
+	}
+
+	.navbar-profile {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	
+	}
+
+	.ul-nav2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+
+	}
+
+	.logo2-container {
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+
+	.logo2 {
+		margin-left: 1.5rem;
+		font-size: 4rem;
+	}
+
+	.logout-btn2 {
+		width: 100%;
+		padding: 1rem 1rem;
+		font-size: 1.3rem;	
+	}
+
+	.logout-btn2-container {
+		margin-right: 0rem;
+		margin-left: 0rem;
+	}
+
+	.profile {
+		margin-left: 2rem;
+		margin-right: 0rem;
+		font-size: 2.2rem;
+	}
+
+	.locations {
+		margin-left: 0rem;
+		margin-right: 0rem;
+		font-size: 2.2rem;
+	}
+
+	.logout {
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+
+	
+
+	.user-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 6rem;
+	}
+	
+	.user-intro {
+		font-size: 6rem;
+	}
+
+	.countries-album-container {
+		margin-top: 8rem;
+	}
+	
+	.countries-album-tag {
+		font-size: 4.5rem;
+		margin-bottom: 8rem;
+	}
+	
+	.albums-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 6rem 8rem;
+	}
+
+	.user-container {
+		margin-top: 4rem;
+	}
+	
+	.user-intro {
+		font-size: 5rem;
+	}
+
+	.countries-album-container {
+		margin-top: 8rem;
+	}
+	
+	.countries-album-tag {
+		font-size: 4rem;
+		margin-bottom: 8rem;
+	}
+	
+	.albums-grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 6rem 8rem;
+	}
+
+	.chosen-album-container {
+		margin-top: 6rem;
+	
+	}
+	
+	.chosen-album-title {
+		text-align: center;
+		font-size: 5rem;
+		font-family: "Poiret One";
+		font-weight: bold;
+		color: #CBC5EA;
+		margin-bottom: 6rem;
+	}
+	
+	.chosen-photos-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	
+	
+	.location-card:hover {
+		transform: scale(0.9);
+	}
+	
+	.location-image-landscape {
+		max-width: 30rem;
+	}
+	
+	.location-image-portrait {
+		max-height: 30rem;
+	}
+
+	.location-image-card2 {
+		max-width: 80%;
+		margin-top: 3rem;
+	}
+	
+	.photo-note-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 4rem auto;
+	}
+	
+	.photo-note-container {
+		border: 1px solid #ccc;
+		border-radius: 0.25rem;
+		padding: 2.5rem;
+		width: 80%;
+	}
+	
+	.note-area {
+		display: block;
+		width: 100%;
+		border-radius: 0.25rem;
+		margin-top: 1rem;
+	}
+	
+	.create-btn2-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.create-btn2 {
+		width: 8rem;
+		height: 5rem;
+		font-size: 1.5rem;
+		font-family: "Poiret One";
+		font-weight: bold;
+		color: #CBC5EA;
+		background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+		outline: none;
+		border: none;
+		border-radius: 2rem;
+		box-shadow: 0 2px 2px #cbc5ea79;
+		transition: transform 0.25s ease-in-out;
+		cursor: pointer;
+		margin: 1rem 0;
+	}
+	
+	.note-list {
+		list-style: none;
+		background-color:#283939b0;
+		padding: 0.1rem 1.5rem;	
+		border-radius: 0.3rem;
+	}
+	
+	.note-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-height: 8rem;
+		width: 100%;
+		margin: 2rem 0;
+		padding: 1.3rem;
+		border: 1px solid #ccc;
+		border-radius: 0.25rem;
+		font-size: 1.7rem;
+		font-family: "Poiret One";
+		font-weight: bold;
+		color: #CBC5EA;
+		
+	}
+
+	.delete-btn2 {
+		margin: 2rem 0 0 20rem;
+		width: 3rem;
+		height: 3rem;
+		color: #CBC5EA;
+		background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+		outline: none;
+		border: none;
+		border-radius: 2rem;
+		box-shadow: 0 2px 2px #cbc5ea79;
+		transition: transform 0.25s ease-in-out;
+		cursor: pointer;
+	}
+
+	.location-input-container {
+		display: flex;
+		justify-content: center;
+		margin-top: 1rem;
+	}
+	
+	.location-input-container h1 {
+		text-align: center;
+		font-size: 2.5rem;
+		font-family: "Poiret One";
+		font-weight: bold;
+		color: #CBC5EA;
+		margin: 4rem 0;
+	}
+	
+	.location-label {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.3rem;
+		margin-bottom: 1.5rem;
+	}
+	
+	.location-input {
+		font-size: 2rem;
+		padding: 0.3rem;
+		margin: 0 1rem;
+	}
+	
+	.search-btn { 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 7rem;
+		height: 4rem;
+		margin: 2rem 0 5rem 8.5rem;
+		font-size: 1.5rem;
+	}
+
+	.location-list {
+		display: block;
+	}
+	
+	.location-item-container {
+		margin: 0 auto;
+		margin-bottom: 2rem;
+		width: 70%;
+		background-color: rgba(0, 0, 0, 0.7);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+		border-radius: 10px;
+		padding: 18px;
+	}
+	
+	.fact-name {
+		font-family: "Poiret One";
+		font-size: 3rem;
+		font-weight: bold;
+		color: #CBC5EA;
+	}
+	
+	.fact-value {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		font-size: 2rem;
+		font-family: "Poiret One";
+		font-weight: bold;
+		color: #CBC5EA;
+	}
+	
+	.fact-value span {
+		margin-left: auto;
+		font-size: 2rem;
+		font-family: "Poiret One";
+		font-weight: bold;
+		color: #CBC5EA;
+	}
+	
+	.flag {
+		max-height: 9rem;
+		max-width: 9rem;
+	}
+	
+	.check-out-btn {
+		display: block;
+		margin: 6rem auto;
+		font-family: "Poiret One";
+		font-size: 1.5rem;
+		font-weight: bold;
+		width: 12rem;
+		height: 5rem;
+		
+	}
+
+	.chosen-photos-container {
+		margin-top: 6rem;
+	
+	}
+	
+	.chosen-country-name {
+		text-align: center;
+		font-size: 5rem;
+		font-family: "Poiret One";
+		font-weight: bold;
+		color: #CBC5EA;
+		margin: 10rem 0;
+	}
+
+	.page-container {
+		display: flex;
+		justify-content: center;
+		margin: 1rem 0 10rem 0;
+	}
+	
+	.nextpg-btn, .prevpg-btn{
+		font-family: "Poiret One";
+		font-size: 2rem;
+		font-weight: bold;
+		padding: 2rem;
+		margin: 0 1rem;
+		color: #CBC5EA;
+	}
+	
+	.save-photo-container {
+		margin: 4rem 0;
+	}
+	
+	select {
+		border: none;
+		border-radius: 2rem;
+		background-color: white;
+		padding: 0.6rem;
+ 		font-size: 1.4rem;
+  	box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+		transition: box-shadow 0.3s;
+	}
+	
+	select:focus {
+		outline: none;
+		box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+	}
+	
+	option:hover {
+		background-color: #f5f5f5;
+	}
+	
+	.photo-info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto 4rem;
+		padding: 1rem;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+	
+	.pexels-id, .photographer {
+		font-family: "Poiret One";
+		font-size: 1.9rem;
+		font-weight: bold;
+		color: #CBC5EA;
+		text-align: center;
+	}
+
+	.save-label {
+		font-size: 1.6rem;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	
+	.save-btn {
+		font-family: "Poiret One";
+		font-size: 1.5rem;
+		font-weight: bold;
+		padding: 0.7rem;
+		margin: 0 1rem;
+		color: #CBC5EA;
+		background: linear-gradient(to bottom,  #5e5757, #2d2d2d);
+		outline: none;
+		border: none;
+		border-radius: 2rem;
+		box-shadow: 0 2px 2px #cbc5ea79;
+		transition: transform 0.25s ease-in-out;
+		cursor: pointer;
+	}
+
+
+}
